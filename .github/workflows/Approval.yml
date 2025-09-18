@@ -19,6 +19,7 @@ jobs:
       - name: Cleanup
         run: |
           rm -rf * .[^.]*
+          echo "token: $token (will be masked if secret)"
 
       - name: Checkout Repository
         uses: actions/checkout@v4
